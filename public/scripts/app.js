@@ -35,14 +35,23 @@ function createTweetElement(tweet) {
 
 //prevent default form submission, serialize data submitted
 $(".tweet-form").on("submit", function (event){
-     event.preventDefault();
-     let serializedText =  $( this ).serialize();
+  event.preventDefault();
+  let serializedText =  $( this ).serialize();
+  let charactersCount = $('.textarea').val().length;
 
+  if(charactersCount <= 0){
+    alert("Please add your tweet.")
+  } else if (charactersCount > 140){
+    alert("Please make your tweet concise!")
+  } else {
     $.post( "/tweets", serializedText)
-      .done(function(data, status){
-        console.log(status)
-      });
-  });
+    .done(function(data, status){
+    console.log(status)
+    location.reload();              //reload the page after submit!
+    });
+  }
+});
+
 
 
 function loadTweets (){
