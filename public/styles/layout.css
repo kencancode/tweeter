@@ -54,7 +54,7 @@ body {
   margin: 15px 18px;
 }
 
-h2 {
+.new-tweet > h2 {
   padding-top: 12px;
   padding-bottom: 5px;
   border-bottom : black solid 0.5px;
@@ -140,6 +140,24 @@ opacity: 0;
   justify-content: space-between;
   align-items: center;
   width: 72%;
+}
+
+.error {
+  border-radius: 5px;
+  background-color: #ff6363;
+  padding:10px 10px;
+  display: none;
+}
+
+.error-title {
+  text-align: center;
+  color: white;
+}
+
+.error-message {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
 }
 
 

@@ -13,7 +13,6 @@ $(document).ready(function() {
 
   });
 
-
   console.log("DOM is ready to be manupulated");
 });
 

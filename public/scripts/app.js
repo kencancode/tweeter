@@ -51,11 +51,16 @@ $(".tweet-form").on("submit", function (event){
   event.preventDefault();
   let serializedText =  $(this).serialize();
   let charactersCount = $('.textarea').val().length;
+  $(".error").slideUp("fast");      //slide up in case the error message is there
 
   if(charactersCount <= 0){
-    alert("Please add your tweet.")
+    // alert("Please add your tweet.")
+    $(".error p").text("Please add your tweet!");
+    $(".error").slideDown("fast");
   } else if (charactersCount > 140){
-    alert("Please make your tweet concise!")
+    // alert("Please make your tweet concise!")
+    $(".error p").text("Please make your tweet concise!");
+    $(".error").slideDown("fast");
   } else {
     $.post( "/tweets", serializedText)
     .done(function(data, status){
