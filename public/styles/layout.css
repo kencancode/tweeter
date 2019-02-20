@@ -18,8 +18,120 @@ body {
   margin: 0;
   color: #244751;
   background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ .container {
+  width: 450px;
+  background: #ffffff;
+  margin: auto;
+  padding: 40px 40px 40px 40px;
+}
+
+
+.new-tweet {
+  background: #eeeeee ;
+  padding-bottom: 15px;
+  border: #dedede solid 0.5px;
+  border-radius: 5px
+}
+
+.textarea {
+  display: block;
+  margin: auto;
+  width: 90%;
+  margin: 15px 18px;
+}
+
+h2 {
+  padding-top: 12px;
+  padding-bottom: 5px;
+  border-bottom : black solid 0.5px;
+  margin-right: 20px;
+  margin-left:  20px;
+}
+
+.submit-tweet-button {
+  margin-left: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.counter {
+  float: right;
+  padding-top: 10px;
+  padding-right: 15px;
+}
+
+.words-over-limit {
+  color: red;
+}
+
+.tweet-1 {
+  border: 0.5px solid #dedede;
+  border-radius: 5px;
+  margin: 20px 0px 0px 0px;
+  opacity: 0.7;
+}
+
+.tweet-1:hover {
+  opacity: 1;
+}
+
+.tweet-1:hover .icons {       /*when hover over tweet-1, target .icons*/
+  opacity: 1;
+}
+
+.tweet-1-header {
+  background: #f2f2f2;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Voldemort {
+   display: inline;
+}
+
+.Voldemort-text {
+   padding: 10px 10px 10px 10px;
+   color: black;
+}
+
+.Voldemort-name {
+  display: inline;
+  color: #6A7D84;
+  font-size: 15px;
+}
+
+.Voldemort-time {
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.Voldemort-handle {
+display: inline;
+float: right;
+color: #a1a1a1;
+font-size: 15px
+}
+
+.icons {
+margin-left: 180px;
+margin-right: 10px;
+opacity: 0;
+}
+
+.name-handle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 72%;
+}
+
