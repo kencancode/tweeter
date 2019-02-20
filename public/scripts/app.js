@@ -5,6 +5,14 @@
  */
 $(document).ready(function(){
 
+$(".btn-create-tweet").on("click", function (){
+  $(".new-tweet").slideToggle("slow", function(){
+  });
+  $(".textarea").focus()
+});
+
+
+
 function renderTweets(tweets) {
   // loops through tweets
     // calls createTweetElement for each tweet
@@ -19,13 +27,13 @@ function createTweetElement(tweet) {
   let $tweet = $('<article>').append(`
           <article class="tweet-1">
           <header class="tweet-1-header">
-          <img class="Voldemort" src=${tweet.user.avatars.small} width="80px" height="80px">
+          <img class="Voldemort" src=${escape(tweet.user.avatars.small)} width="80px" height="80px">
           <span class="name-handle">
-          <h3 class="Voldemort-name">${tweet.user.name}</h3><h4 class="Voldemort-handle">${tweet.user.handle}</h4>
+          <h3 class="Voldemort-name">${escape(tweet.user.name)}</h3><h4 class="Voldemort-handle">${escape(tweet.user.handle)}</h4>
           </span>
           </header>
-          <p class="Voldemort-text">${tweet.content.text}</p>
-          <footer class="Voldemort-time"><span>${tweet.created_at}</span><span class="icons"><i class="fas fa-flag"></i> <i class="fas fa-retweet"></i> <i class="fas fa-heart"></i></span></footer>
+          <p class="Voldemort-text">${escape(tweet.content.text)}</p>
+          <footer class="Voldemort-time"><span>${escape(tweet.created_at)}</span><span class="icons"><i class="fas fa-flag"></i> <i class="fas fa-retweet"></i> <i class="fas fa-heart"></i></span></footer>
           </article>`);
   return $tweet;
 }
@@ -33,10 +41,15 @@ function createTweetElement(tweet) {
 
 // renderTweets(data);
 
+
+//show the form when clicked
+
+
+
 //prevent default form submission, serialize data submitted
 $(".tweet-form").on("submit", function (event){
   event.preventDefault();
-  let serializedText =  $( this ).serialize();
+  let serializedText =  $(this).serialize();
   let charactersCount = $('.textarea').val().length;
 
   if(charactersCount <= 0){
@@ -60,9 +73,15 @@ function loadTweets (){
     renderTweets(tweet)
   })
 }
-
 loadTweets()
 
+
+//users won't be able to pass code to server
+function escape(str) {
+  var div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
 
 
 

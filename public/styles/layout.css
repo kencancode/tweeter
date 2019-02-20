@@ -25,6 +25,13 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+/*
+ * Hide from in order to slide down later!
+ */
+ .new-tweet {
+  display: none;
+ }
+
  .container {
   width: 450px;
   background: #ffffff;
@@ -134,4 +141,5 @@ opacity: 0;
   align-items: center;
   width: 72%;
 }
+
 
