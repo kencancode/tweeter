@@ -89,6 +89,20 @@ function escape(str) {
 }
 
 
+// function convertTime (millisecondsPosted){
+//   const differenceInSecond = (new.date() - millisecondsPosted ) / 1000;
+
+//   if (differenceInSecond < 60){
+//     return "Posted" + differenceInSecond + "seconds ago";
+//   } else if (differenceInSecond >= 60 && differenceInSecond < 60*60){
+//     return "Posted" + differenceInSecond/3600 + "minutes ago";
+//   } else if (differenceInSecond >= 3600 && differenceInSecond < 3600*24){
+//     return "Posted" + differenceInSecond/3600 * 24 + "hours ago";
+//   } else {
+//     return "Posted more than a day ago";
+//   }
+// }
+
 
 });
 
