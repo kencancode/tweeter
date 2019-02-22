@@ -28,3 +28,7 @@ This repository is the starter code for the project: Students will fork and clon
 - jQuery
 - MongoDB
 
+## Screenshots
+!["Tweeter App"](https://github.com/kencancode/tweeter/blob/master/docs/Tweeter-app.png)
+!["Adding content"](https://github.com/kencancode/tweeter/blob/master/docs/Tweeter-textarea.png)
+!["Error Message"](https://github.com/kencancode/tweeter/blob/master/docs/Tweeter-error.png)
