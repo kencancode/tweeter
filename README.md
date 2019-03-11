@@ -29,6 +29,6 @@ Goals: to polish skills such as HTML, CSS, JavaScript, jQuery, AJAX, Node, Expre
 - MongoDB
 
 ## Screenshots
-!["Tweeter App"](https://github.com/kencancode/tweeter/blob/master/docs/Tweeter-app.png)
-!["Adding content"](https://github.com/kencancode/tweeter/blob/master/docs/Tweeter-textarea.png)
-!["Error Message"](https://github.com/kencancode/tweeter/blob/master/docs/Tweeter-error.png)
+!["Tweeter App"](https://github.com/kencancode/tweeter/blob/master/docs/tweeter-app.jpg)
+!["Adding content"](https://github.com/kencancode/tweeter/blob/master/docs/Tweeter-compose.jpg)
+!["Error Message"](https://github.com/kencancode/tweeter/blob/master/docs/Tweeter-errormessage.jpg)
