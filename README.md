@@ -6,7 +6,7 @@ After clicking "Compose", users will be able to write a tweet, telling the world
 
 With AJAX, Tweets will be shown in real-time. Tweet content will be stored in MongoDB.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+Goals: to polish skills such as HTML, CSS, JavaScript, jQuery, AJAX, Node, Express and MongoDB.
 
 
 ## Dependencies
